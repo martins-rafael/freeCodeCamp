@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Formulário</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <h1 id="title">Pesquisa</h1>
+
+        <div class="main">
+
+            <p id="description">Por favor preencha os campos abaixo</p>
+
+            <form id="survey-form" action="#" method="GET">
+
+                <div class="container">
+                    <div class="container-label">
+                        <label id="name-label" for="nome">*Nome:</label>
+                    </div>
+                    <div class="container-input-select">
+                        <input class="input-select" id="name" type="text" name="nome" placeholder="Digite o seu nome" required autofocus>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="container-label">
+                        <label id="number-label" for="idade">*Idade:</label>
+                    </div>
+                    <div class="container-input-select">
+                        <input class="input-select" id="number" type="number" name="idade" min="1" max="100" placeholder="Digite a sua idade" required>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="container-label">
+                        <label id="email-label" for="email">*Email:</label>
+                    </div>
+                    <div class="container-input-select">
+                        <input class="input-select" id="email" type="email" name="email" placeholder="Digite o seu email" required>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="container-label">
+                        <label for="sexo">Sexo:</label>
+                    </div>
+                    <div class="container-input-select">
+                        <ul>
+                            <li><label><input type="radio" name="sexo" value="masculino">Masculino</label></li>
+                            <li><label><input type="radio" name="sexo" value="feminino">Feminino</label></li>
+                            <li><label><input type="radio" name="sexo" value="outro"></label>Outro</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="container-label">
+                        <label for="formacao">*Qual sua formação?</label>
+                    </div>
+                    <div class="container-input-select">
+                        <select class="input-select" id="dropdown" name="formacao">
+                            <option disabled selected value>Selecione uma opção</option>
+                            <option value="EFI">Ensino fundamental incompleto</option>
+                            <option value="EFC">Ensino fundamental completo</option>
+                            <option value="EMI">Ensino médio incompleto</option>
+                            <option value="EMC">Ensino médio completo</option>
+                            <option value="ESI">Ensino superior incompleto</option>
+                            <option value="ESC">Ensino superior completo</option>
+                            <option value="PND">Prefiro não dizer</option>
+                        </select>
+                    </div>
+                </div>
+           
+                <div class="container">
+                    <div class="container-label">
+                        <label for="tempo-redes-sociais">Quanto tempo você gasta diariamente nas redes sociais?</label>
+                    </div>
+                    <div class="container-input-select">
+                        <select class="input-select" name="tempo-redes-sociais">
+                            <option disabled selected value>Selecione uma opção</option>
+                            <option value="0">Menos de uma hora</option>
+                            <option value="1">Uma hora</option>
+                            <option value="2">Duas horas</option>
+                            <option value="3">Três horas ou mais</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="container-label">
+                        <label for="redes">Quais são suas redes favoritas?</label>
+                    </div>
+                    <div class="container-input-select">
+                        <ul>
+                            <li><label><input type="checkbox" name="redes" value="instagram">Instagram</label></li>
+                            <li><label><input type="checkbox" name="redes" value="twitter">Twitter</label></li>
+                            <li><label><input type="checkbox" name="redes" value="facebook">Facebook</label></li>
+                            <li><label><input type="checkbox" name="redes" value="linkedin">LinkedIn</label></li>
+                            <li><label><input type="checkbox" name="redes" value="pinterest">Pinterest</label></li>
+                            <li><label><input type="checkbox" name="redes" value="vk">VK</label></li>
+                            <li><label><input type="checkbox" name="redes" value="outra">Outra</label></li>
+                            <li><label><input type="checkbox" name="redes" value="nenhuma">Nenhuma</label></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="container-label">
+                        <label for="comentario">Deixe seu comentário, sugestão ou dúvida:</label>
+                    </div>
+                    <div class="container-input-select">
+                        <textarea class="input-select" name="comentario" rows="4" cols="20" placeholder="Digite aqui"></textarea>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <button class="submit" id="submit" type="submit">Enviar</button>            
+                </div>
+
+            </form>
+
+        </div>
+
+    </body>
+    
+</html>

@@ -1,0 +1,269 @@
+/* GERAL */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #49274a;
+    background-color: #f4dec8;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+/* NAVEGAÇÃO */
+
+#header {
+    background-color: #49274a;   
+}
+
+.header-img {
+    width: 100%;
+    margin: 0;
+    padding-top: 5px;
+    text-align: center;
+    background-color: #49274a;
+}
+
+#nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin: 0; 
+}
+.nav-link{
+    width: 100%;
+}
+
+.nav-link a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* SEÇÃO HERO */
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: #000 1px 0 10px;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+/* SEÇÃO SOBRE */
+
+#sobre {
+    padding: 20px;
+    text-align: justify;
+}
+
+#video {
+    width: 100%;
+}
+
+/* SEÇÃO DE LIVROS */
+
+#livros {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#livros a {
+    text-decoration: none;
+    color: #49274a;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: #f8eee7;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.card h3 {
+    padding: 20px;
+}
+
+/* SEÇÃO DE CONTATO */
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#contato p a {
+    text-decoration: none;
+    color:#49274a;
+}
+
+#newsletter {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#email, 
+#submit {
+    border: 1px solid #49274a;
+    border-radius: 5px;
+}
+
+#email {
+    padding: 10px;
+    background-color: #f8eee7;
+}
+
+#submit {
+    margin-left: 5px;
+    padding: 10px 20px;
+    color: #f8eee7;
+    background-color: #49274a;
+}
+
+/* RODAPÉ */
+
+footer {
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+
+    /* GERAL */
+
+    h2 {
+        text-align: left;
+    }
+
+    /* NAVEGAÇÃO */
+
+    #header {
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    
+    .header-img {
+        margin-left: 20px;
+        text-align: left;        
+    }
+
+    #header nav {
+        display: flex;
+        flex-direction: row;        
+    }
+
+    #nav-bar ul {
+        flex-direction: row;
+        width: 50%;
+        padding: 0;      
+    }
+
+    .nav-link a {
+        width: 1px;
+    }
+
+    #nav-bar a:hover {
+        transform: scale(0.95)
+    }
+
+    /* SEÇÃO HERO */
+
+    #hero {
+        height: 100vh;
+    }
+
+    #hero h1 {
+        font-size: 3em;
+    }
+
+    /* SEÇÃO SOBRE */
+
+    #sobre {
+        max-height: 500px;
+        margin: 0 10%;
+        padding-top: 40px;
+    }
+
+    #video {
+        width: 50%;
+        margin: 2% 25% 25%;
+    }
+
+    /*SEÇÃO DE LIVROS */
+
+    #livros {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1000px;
+        margin: 0 10%;
+        padding-top: 40px;
+    }
+
+    #livros h2 {
+        width: 100%;
+        text-align: left;
+    }
+
+    .card {
+        max-width: 220px;
+    }
+    
+    .card:hover {
+        transition: 0.2s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        transform: scale(1.05);
+    }
+
+    /* SEÇÃO DE CONTATO */
+
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 10%;
+        padding-top: 40px;
+    }
+    #contato h2 {
+        width: 100%;
+    }
+    #contato p {
+        width: 100%;
+    }
+    #contato div {
+        width: 100%;
+        text-align: left;
+    }
+    
+    #email {
+        width: 40%;
+    }
+}

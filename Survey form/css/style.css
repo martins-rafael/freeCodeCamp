@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    width: 95%;
+    margin: 2.5% auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    background-color: #037367;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+}
+
+.main {
+    padding: 10%;
+    background-color: #fff;
+    border: 1px dashed #037367;
+    border-radius: 10px;
+}
+
+p {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+.container-input-select {
+    margin-top: 10px;
+}
+
+.input-select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #037367;
+    border-radius: 5px;
+}
+
+.submit {
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #037367;
+    border: 2px solid #037367;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        width: 75%;
+        margin: 3% auto;
+    }
+
+    .main {
+        padding: 5%;
+  }
+    
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-input-select {
+        width: 47%;
+        margin-left: 3%;
+    }
+
+    .container-label {
+        width: 30%;
+        text-align: right;
+    }
+}

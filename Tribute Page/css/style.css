@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,700&display=swap');
+
+body {
+    width: 75%;
+    margin: 4% auto;    
+    font-family: 'Oswald', sans-serif;
+    text-indent: 10px;
+    text-align: justify;
+    color: #333;
+    background-color: #e0e0e0e0;
+}
+
+#main {
+    padding: 10px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: 10px 20px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#title {
+    font-size: 3em;
+    text-align: center;
+    color: #000;
+}
+
+h2 {
+    padding-top: 20px;
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+#img-div {
+    margin: 10px;
+    text-align: center;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#img-caption {
+    padding: 10px 0 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+
+#link {
+    padding-top: 100px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#link a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {    
+    font-weight: bold;
+}
+
+footer {
+    margin: -10px;
+    padding: 1px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    border-radius: 0 0 10px 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 95%;
+        margin: 2.5% auto;
+    }
+}

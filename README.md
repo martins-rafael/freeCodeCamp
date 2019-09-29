@@ -1,4 +1,4 @@
-# Projetos do plataforma freeCodeCamp
+# Projetos da plataforma freeCodeCamp
 ![freeCodeCamp](https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png)
 
 Repositório para apresentar os projetos desenvolvidos no curso.

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap');
+
+body {
+    margin: 10px 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    line-height: 1.5em;
+    color: #ddd;
+    background-color: #102027;
+}
+
+h2,
+h3 {
+    color: #fff;
+}
+
+pre{
+    white-space: pre-line;
+}
+
+code {
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    background-color: #62717b;
+    border-radius: 10px;
+}
+
+#navbar ul li {
+    padding: 10px 0;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    list-style: none;
+    
+}
+
+#navbar ul li a {
+    display: inline-block;
+    width: 100%;
+    color: #ddd;
+    text-decoration: none;
+}
+
+#main-doc section article {
+    padding: 0 10px;
+}
+
+#referencia a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    #navbar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        min-width: 290px;
+        height: 100%;
+        border-right: 2.5px solid #62717b;
+    }
+
+    #navbar header {
+        padding: 10px 20px;
+    }
+
+    #navbar ul {
+        height: 80%;
+        overflow-y: auto;
+    }
+
+    #main-doc {
+        margin-left: 305px;
+    }
+}

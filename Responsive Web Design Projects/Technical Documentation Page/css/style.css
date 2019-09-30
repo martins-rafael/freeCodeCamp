@@ -58,7 +58,7 @@ code {
         width: 300px;
         min-width: 290px;
         height: 100%;
-        border-right: 2.5px solid #62717b;
+        border-right: 2.5px dotted #62717b;
     }
 
     #navbar header {

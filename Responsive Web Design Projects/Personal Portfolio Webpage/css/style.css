@@ -1,0 +1,188 @@
+/* GERAL */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #4d4d4d;
+    background-color: #ebeced;
+}
+
+h1, h2, h3 {
+    width: 100%;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #000;
+
+}
+
+/* NAVEGAÇÃO */
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 0;
+    background-color: #000015;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+#navbar ul li a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* SEÇÃO HERO */
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    font-size: 1.6em;
+    line-height: 0;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* SEÇÃO DE PORTFOLIO */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.project-tile h3 {
+    padding: 10px 0;
+}
+
+.project-tile img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000015;
+    border-radius: 5px;
+}
+
+/* SEÇÃO DE CONTATO */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+.tel-email p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tel-email p a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+.social-media a img {
+    padding: 5px;
+}
+
+/* RODAPÉ */
+
+footer {
+    padding: 1px;
+    text-align: center;
+    line-height: 0;
+    color: #fff;
+    background-color: #000015;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+
+    /* NAVEGAÇÃO */
+
+    #navbar {
+        position: fixed;
+        flex-direction: row;
+        justify-content: flex-end;
+        opacity: 0.95;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    #navbar ul {
+        flex-direction: row;
+        width: 30%;
+    }
+
+    #navbar ul li a:hover {
+        transform: scale(0.95);
+        color: #d4d4d4;
+    }
+    
+    /* SEÇÃO HERO */
+
+    #welcome-section {
+        font-size: 3em;
+    }
+
+    /* SEÇÃO DE PORTFOLIO */
+
+    #projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .button:hover {
+        
+        color: #fff;
+        background-color: #000060;
+    }
+}

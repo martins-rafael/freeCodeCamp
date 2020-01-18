@@ -41,8 +41,14 @@ ul li {
 .input-select {
     width: 90%;
     padding: 10px;
+    font-family: 'Open Sans', sans-serif;
     border: 1px solid #037367;
     border-radius: 5px;
+    resize: none;
+}
+
+.input-select:focus {
+    outline: 0;
 }
 
 .submit {
@@ -54,6 +60,7 @@ ul li {
     background-color: #037367;
     border: 2px solid #037367;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {

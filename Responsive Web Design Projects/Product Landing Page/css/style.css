@@ -63,6 +63,7 @@ h1, h2, h3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 60vh;
 }
 
@@ -266,5 +267,13 @@ footer {
     
     #email {
         width: 40%;
+    }
+
+    #email:focus{
+        outline: 0;
+    }
+
+    #submit {
+        cursor: pointer;
     }
 }

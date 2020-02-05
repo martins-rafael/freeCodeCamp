@@ -3,10 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap');
 
 body {
+    box-sizing: border-box;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    color: #49274a;
-    background-color: #f4dec8;
+    color: #525252;
+    background-color: #ebeced;
 }
 
 h1, h2, h3 {
@@ -17,7 +18,7 @@ h1, h2, h3 {
 /* NAVEGAÇÃO */
 
 #header {
-    background-color: #49274a;   
+    background-color: #37464f;   
 }
 
 .header-img {
@@ -25,7 +26,7 @@ h1, h2, h3 {
     margin: 0;
     padding-top: 5px;
     text-align: center;
-    background-color: #49274a;
+    background-color: #37464f;
 }
 
 #nav-bar ul{
@@ -34,6 +35,7 @@ h1, h2, h3 {
     align-items: center;  
     margin: 0; 
     padding: 0;
+    list-style: none;
 }
 .nav-link{
     width: 100%;
@@ -63,52 +65,43 @@ h1, h2, h3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 60vh;
 }
 
 /* SEÇÃO SOBRE */
 
 #sobre {
-    padding: 20px;
+    margin: 70px auto 0 auto;
+    padding: 10px;
     text-align: justify;
 }
 
-#video {
-    width: 100%;
+#sobre p {
+    margin-top: 40px;
 }
 
 /* SEÇÃO DE LIVROS */
 
 #livros {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    margin: 70px auto 0 auto;
 }
 
-#livros a {
-    text-decoration: none;
-    color: #49274a;
+.livros-container {
+    display: block;
+    margin-top: 40px;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    background-color: #f8eee7;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.card img {
+.livros-container img {
     width: 100%;
-    text-align: center;
-    border-radius: 5px 5px 0 0;
 }
 
-.card h3 {
-    padding: 20px;
+.livros-texto {
+    padding: 50px 40px 90px 40px;
+}
+
+.livros-texto p {
+    margin-top: 40px;
+    text-align: justify;
 }
 
 /* SEÇÃO DE CONTATO */
@@ -118,11 +111,12 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    margin: 70px auto 0 auto;
 }
 
 #contato p a {
     text-decoration: none;
-    color:#49274a;
+    color:#525252;
 }
 
 #newsletter {
@@ -132,49 +126,46 @@ h1, h2, h3 {
 
 #email, 
 #submit {
-    border: 1px solid #49274a;
+    border: 1px solid #37464f;
     border-radius: 5px;
 }
 
 #email {
     padding: 10px;
-    background-color: #f8eee7;
+    background-color: #ebeced;
 }
 
 #submit {
     margin-left: 5px;
     padding: 10px 20px;
-    color: #f8eee7;
-    background-color: #49274a;
+    color: #ebeced;
+    background-color: #37464f;
 }
 
 /* RODAPÉ */
 
 footer {
     margin: 20px 0 0 0;
+    padding: 5px;
     text-align: center;
+    color: #ebeced;
+    background-color: #37464f;
 }
 
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
 
-    /* GERAL */
-
-    h2 {
-        text-align: left;
-    }
-
     /* NAVEGAÇÃO */
 
     #header {
         position: fixed;
         width: 100%;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        box-shadow: 0px 10px 50px 5px rgba(0,0,0,0.5);
     }
     
     .header-img {
-        margin-left: 20px;
+        margin-left: 70px;
         text-align: left;        
     }
 
@@ -194,13 +185,14 @@ footer {
     }
 
     #nav-bar a:hover {
-        transform: scale(0.95)
+        font-weight: bold;
     }
 
     /* SEÇÃO HERO */
 
     #hero {
-        height: 100vh;
+        height: 90vh;
+        max-height: 700px;
     }
 
     #hero h1 {
@@ -210,40 +202,41 @@ footer {
     /* SEÇÃO SOBRE */
 
     #sobre {
-        max-height: 500px;
-        margin: 0 10%;
-        padding-top: 40px;
+        max-width: 720px;
     }
 
     #video {
-        width: 50%;
-        margin: 2% 25% 25%;
+        margin-top: 20px;
+        width: 720px;
+        height: 405px;
     }
 
     /*SEÇÃO DE LIVROS */
 
     #livros {
-        flex-direction: row;
-        flex-wrap: wrap;
+        max-width: 1280px;
+    }
+
+    .livros-container {
+        display: flex;
+    }
+
+    .livros-img {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        align-items: center;
         justify-content: center;
-        max-width: 1000px;
-        margin: 0 10%;
-        padding-top: 40px;
     }
 
-    #livros h2 {
-        width: 100%;
-        text-align: left;
+    .livros-img img {
+        width: 60%;
+        height: 60%; 
     }
 
-    .card {
-        max-width: 220px;
-    }
-    
-    .card:hover {
-        transition: 0.2s;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        transform: scale(1.05);
+    .livros-texto {
+        width: 50%;
+        max-width: 500px;
     }
 
     /* SEÇÃO DE CONTATO */
@@ -251,15 +244,18 @@ footer {
     #contato {
         flex-direction: row;
         flex-wrap: wrap;
-        margin: 0 10%;
-        padding-top: 40px;
+        max-width: 1280px;
     }
+
     #contato h2 {
         width: 100%;
+        text-align: left;
     }
+
     #contato p {
         width: 100%;
     }
+
     #contato div {
         width: 100%;
         text-align: left;

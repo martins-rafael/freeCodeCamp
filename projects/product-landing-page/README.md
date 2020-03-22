@@ -1,6 +1,13 @@
-## Responsive Web Design Projects - Build a Product Landing Page
+<h1 align="center">
+<br>
+Responsive Web Design Projects - Build a Product Landing Page
+<br>
+<br>
+  <img src="screenshot.png" alt="screenshot" >
+</h1>
 
-**Objective:** Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/RKRbwL.
+## :dart: Objective: 
+Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/RKRbwL.
 
 Fulfill the below [user stories](https://en.wikipedia.org/wiki/User_story) and get all of the tests to pass. Give it your own personal style.
 
@@ -41,6 +48,3 @@ You can build your project by forking this [CodePen pen](http://codepen.io/freeC
 Once you're done, submit the URL to your working project with all its tests passing.
 
 Remember to use the [Read-Search-Ask](https://www.freecodecamp.org/forum/t/how-to-get-help-when-you-are-stuck-coding/19514) method if you get stuck.
-
-### Screenshot
-![mockup](https://i.ibb.co/QcSBRvt/productlanding-page-mockup.png)

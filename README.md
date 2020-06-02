@@ -16,8 +16,6 @@ Projetos da plataforma freeCodeCamp
   </a>
 </p>
 
-<hr />
-
 ## Responsive Web Design Certification
 
 ### :computer: Lista de Projetos

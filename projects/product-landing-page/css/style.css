@@ -1,4 +1,10 @@
-/* GERAL */
+/* ============
+==== GERAL ====
+============ */
+:root {
+    --bg-color: #37464f;
+    --white-wash: #ebeced;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap');
 
@@ -7,7 +13,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     color: #525252;
-    background-color: #ebeced;
+    background-color: var(--white-wash);
 }
 
 h1, h2, h3 {
@@ -15,28 +21,75 @@ h1, h2, h3 {
     text-align: center;
 }
 
-/* NAVEGAÇÃO */
+h2 {
+    font-size: 32px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+/* =============
+==== MOBILE ====
+============= */
+
+/* ================
+==== NAVAGAÇÃO ====
+================ */
 
 #header {
-    background-color: #37464f;   
+    background-color: var(--bg-color);
+    z-index: 2;
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-around;
 }
 
 .header-img {
-    width: 100%;
+    width: 50%;
     margin: 0;
     padding-top: 5px;
     text-align: center;
-    background-color: #37464f;
+    background-color: var(--bg-color);
 }
 
-#nav-bar ul{
+.desktop-menu {
+    display: none;
+}
+
+nav ul{
     display: flex;
     flex-direction: column;
     align-items: center;  
     margin: 0; 
     padding: 0;
     list-style: none;
+    background-color: var(--bg-color);
+    z-index: 1;
 }
+
+nav.mobile-menu {
+    margin-top: 20px;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/menu.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.mobile-menu ul {
+    position: absolute;
+    left: 0;
+    top: 64px;
+    display: none;
+    padding: 16px 0;
+    width: 100%;
+    text-align: center;
+}
+
 .nav-link{
     width: 100%;
 }
@@ -47,28 +100,56 @@ h1, h2, h3 {
     padding: 10px 0;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: var(--white-wash);
 }
 
-/* SEÇÃO HERO */
+/* =================
+==== SEÇÃO HERO ====
+================= */
+
+#hero * {
+    z-index: 1;
+}
 
 #hero {
+    position: relative;
+    line-height: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    line-height: 0;
     font-size: 2em;
-    color: #fff;
-    text-shadow: #000 1px 0 10px;
+    color: var(--white-wash);
     background-image: url(../img/background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 100vh;
 }
 
-/* SEÇÃO SOBRE */
+#hero .arrow {
+    position: absolute;
+    bottom: 72px;
+    background-image: url('../img/down-arrow.png');
+    background-size: 100% 100%;
+    width: 64px;
+    height: 64px;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+/* ==================
+==== SEÇÃO SOBRE ====
+================== */
 
 #sobre {
     margin: 70px auto 0 auto;
@@ -80,7 +161,13 @@ h1, h2, h3 {
     margin-top: 40px;
 }
 
-/* SEÇÃO DE LIVROS */
+.video-wraper iframe {
+    margin: 0 auto;
+}
+
+/* ======================
+==== SEÇÃO DE LIVROS ====
+====================== */
 
 #livros {
     margin: 70px auto 0 auto;
@@ -88,7 +175,7 @@ h1, h2, h3 {
 
 .livros-container {
     display: block;
-    margin-top: 40px;
+    margin-top: 48px;
 }
 
 .livros-container img {
@@ -96,7 +183,7 @@ h1, h2, h3 {
 }
 
 .livros-texto {
-    padding: 50px 40px 90px 40px;
+    padding: 40px;
 }
 
 .livros-texto p {
@@ -104,7 +191,9 @@ h1, h2, h3 {
     text-align: justify;
 }
 
-/* SEÇÃO DE CONTATO */
+/* =======================
+==== SEÇÃO DE CONTATO ====
+======================= */
 
 #contato {
     display: flex;
@@ -126,44 +215,55 @@ h1, h2, h3 {
 
 #email, 
 #submit {
-    border: 1px solid #37464f;
+    border: 1px solid var(--bg-color);
     border-radius: 5px;
 }
 
 #email {
     padding: 10px;
-    background-color: #ebeced;
+    background-color: var(--white-wash);
+    outline: none;
 }
 
 #submit {
     margin-left: 5px;
     padding: 10px 20px;
-    color: #ebeced;
-    background-color: #37464f;
+    color: var(--white-wash);
+    background-color: var(--bg-color);
 }
 
-/* RODAPÉ */
+/* =============
+==== FOOTER ====
+============= */
 
 footer {
     margin: 20px 0 0 0;
     padding: 5px;
     text-align: center;
-    color: #ebeced;
-    background-color: #37464f;
+    color: var(--white-wash);
+    background-color: var(--bg-color);
 }
 
-/* MEDIA QUERIES */
+/* ==============
+==== DESKTOP ====
+============== */
 
 @media screen and (min-width: 768px) {
 
-    /* NAVEGAÇÃO */
+    /* ================
+    ==== NAVAGAÇÃO ====
+    ================ */
 
     #header {
         position: fixed;
         width: 100%;
         box-shadow: 0px 10px 50px 5px rgba(0,0,0,0.5);
     }
-    
+
+    #header nav.mobile-menu {
+        display: none;
+    }
+
     .header-img {
         margin-left: 70px;
         text-align: left;        
@@ -171,12 +271,14 @@ footer {
 
     #header nav {
         display: flex;
-        flex-direction: row;        
+        flex-direction: row;
+        justify-content: space-around;
+        width: 50%;      
     }
 
     #nav-bar ul {
         flex-direction: row;
-        width: 50%;
+        width: 60%;
         padding: 0;      
     }
 
@@ -188,20 +290,27 @@ footer {
         font-weight: bold;
     }
 
-    /* SEÇÃO HERO */
+    /* =================
+    ==== SEÇÃO HERO ====
+    ================= */
 
     #hero {
-        height: 90vh;
-        max-height: 700px;
+        min-height: 750px;
     }
 
     #hero h1 {
         font-size: 3em;
     }
 
-    /* SEÇÃO SOBRE */
+    /* ==================
+    ==== SEÇÃO SOBRE ====
+    ================== */
 
-    #sobre {
+    #sobre .container {
+        max-width: 1000px;
+    }
+    #sobre .video-wraper {
+        margin: 40px auto;
         max-width: 720px;
     }
 
@@ -211,7 +320,9 @@ footer {
         height: 405px;
     }
 
-    /*SEÇÃO DE LIVROS */
+    /* ======================
+    ==== SEÇÃO DE LIVROS ====
+    ====================== */
 
     #livros {
         max-width: 1280px;
@@ -237,9 +348,12 @@ footer {
     .livros-texto {
         width: 50%;
         max-width: 500px;
+        padding: 90px 40px;
     }
 
-    /* SEÇÃO DE CONTATO */
+    /* =======================
+    ==== SEÇÃO DE CONTATO ====
+    ======================= */
 
     #contato {
         flex-direction: row;
@@ -263,10 +377,6 @@ footer {
     
     #email {
         width: 40%;
-    }
-
-    #email:focus{
-        outline: 0;
     }
 
     #submit {

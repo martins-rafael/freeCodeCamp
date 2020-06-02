@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +7,31 @@
     <title>Personal Portfolio Webpage</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
-    <nav id="navbar">
-        <ul>
-            <li><a href="#welcome-section">HOME</a></li>
-            <li><a href="#projects">PORTFOLIO</a></li>
-            <li><a href="#contact">CONTATO</a></li>
-        </ul>
-    </nav>
+<body id="home">
+    <header>
+        <li><a href="#home">RAFAEL MARTINS</a></li>
+        <nav class="desktop-menu" id="navbar">
+            <ul>
+                <li><a href="#projects">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTATO</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="#projects">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section id="welcome-section">
         <h1>RAFAEL MARTINS</h1>
         <p>Web Developer</p>
+        <div class="arrow"></div>
     </section>
 
     <section id="projects">
         <h2>PORTFOLIO</h2>
-
         <div class="project-tile">
             <img src="img/tribute-page-thumbnail.png" alt="tribute page">
             <h3>Tribute Page</h3>
@@ -63,8 +69,10 @@
     </section>
 
     <footer>
-        <p>&copy 2019 Rafael Martins</p>
+        <p>&copy 2020 Rafael Martins</p>
     </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
-
 </html>

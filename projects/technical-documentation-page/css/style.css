@@ -3,7 +3,7 @@
 body {
     margin: 10px 15px;
     font-family: 'Raleway', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.5em;
     color: #ddd;
     background-color: #102027;
@@ -11,7 +11,7 @@ body {
 
 h2,
 h3 {
-    color: #fff;
+    color: #f5f5f5;
 }
 
 pre{
@@ -21,9 +21,15 @@ pre{
 code {
     display: inline-block;
     padding: 10px;
-    color: #fff;
+    color: #f5f5f5;
     background-color: #62717b;
-    border-radius: 10px;
+    border-radius: 4px;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
 #navbar ul li {
@@ -46,7 +52,7 @@ code {
 }
 
 #referencia a {
-    color: #fff;
+    color: #f5f5f5;
     text-decoration: none;
 }
 
@@ -59,8 +65,8 @@ code {
         position: fixed;
         top: 0px;
         left: 0px;
+        padding-right: 20px;
         width: 300px;
-        min-width: 290px;
         height: 100%;
         border-right: 2.5px dotted #62717b;
     }
@@ -75,6 +81,6 @@ code {
     }
 
     #main-doc {
-        margin-left: 305px;
+        margin-left: 325px;
     }
 }

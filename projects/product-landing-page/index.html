@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <title>Original Books</title>
     <meta charset="utf-8">
@@ -8,52 +7,66 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header id="header">
-        <nav id="nav-bar">
+        <div class="container">
             <figure class="header-img">
-                <img id="header-img" src="img/logo.png" alt="Logotipo Original Books">
+                <a href="#" id="toTop"><img id="header-img" src="img/logo.png" alt="Logotipo Original Books"></a>
             </figure>
-
-            <ul>
-                <li class="nav-link"><a href="#sobre">SOBRE</a></li>
-                <li class="nav-link"><a href="#livros">LIVROS</a></li>
-                <li class="nav-link"><a href="#contato">CONTATO</a></li>
-            </ul>
-        </nav>
+            <nav class="desktop-menu" id="nav-bar">
+                <ul>
+                    <li class="nav-link"><a href="#sobre">SOBRE</a></li>
+                    <li class="nav-link"><a href="#livros">LIVROS</a></li>
+                    <li class="nav-link"><a href="#contato">CONTATO</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile-menu">
+                <ul>
+                    <li class="nav-link"><a href="#sobre">SOBRE</a></li>
+                    <li class="nav-link"><a href="#livros">LIVROS</a></li>
+                    <li class="nav-link"><a href="#contato">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="hero">
         <h1> Original Books</h1>
         <p>Sua livraria favorita</p>
+        <div class="arrow"></div>
     </section>
 
     <section id="sobre">
-        <h2>Sobre</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Maecenas ante justo, accumsan vitae arcu in, viverra pulvinar ipsum. Morbi turpis arcu, facilisis vitae
-            pretium nec, pretium a ligula.
-            Donec at eros vitae lacus laoreet sagittis. Suspendisse scelerisque mi ac molestie dapibus. Nullam ut auctor
-            augue.
-            Sed mauris est, tempor quis pellentesque euismod, dignissim ut purus.
-            Etiam bibendum nibh ut tellus condimentum finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Maecenas ante justo, accumsan vitae arcu in, viverra pulvinar ipsum. Morbi turpis arcu, facilisis vitae
-            pretium nec, pretium a ligula.
-            Donec at eros vitae lacus laoreet sagittis. Suspendisse scelerisque mi ac molestie dapibus. Nullam ut auctor
-            augue.
-            Sed mauris est, tempor quis pellentesque euismod, dignissim ut purus.
-            Etiam bibendum nibh ut tellus condimentum finibus.</p>
-
-        <iframe id="video" height="202" width="360" align="center" src="https://www.youtube.com/embed/P_-7pms7fkU"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
+        <div class="container">
+            <h2>Sobre</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas ante justo, accumsan vitae arcu in, viverra pulvinar ipsum. Morbi turpis arcu, facilisis vitae
+                pretium nec, pretium a ligula.
+                Donec at eros vitae lacus laoreet sagittis. Suspendisse scelerisque mi ac molestie dapibus. Nullam ut
+                auctor
+                augue.
+                Sed mauris est, tempor quis pellentesque euismod, dignissim ut purus.
+                Etiam bibendum nibh ut tellus condimentum finibus. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+                Maecenas ante justo, accumsan vitae arcu in, viverra pulvinar ipsum. Morbi turpis arcu, facilisis vitae
+                pretium nec, pretium a ligula.
+                Donec at eros vitae lacus laoreet sagittis. Suspendisse scelerisque mi ac molestie dapibus. Nullam ut
+                auctor
+                augue.
+                Sed mauris est, tempor quis pellentesque euismod, dignissim ut purus.
+                Etiam bibendum nibh ut tellus condimentum finibus.
+            </p>
+        </div>
+        <div class="video-wraper">
+            <iframe id="video" height="202" width="360" align="center" src="https://www.youtube.com/embed/P_-7pms7fkU"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
     </section>
 
     <section id="livros">
         <h2>Livros</h2>
-
         <div class="livros-container">
             <div class="livros-img">
                 <img src="img/book-1.jpg" alt="Homem-Aranha lendo um livro enquanto escala uma parede">
@@ -67,7 +80,6 @@
             </div>
         </div>
 
-
         <div class="livros-container">
             <div class="livros-img" style="order: 2;">
                 <img src="img/book-2.jpg" alt="Um homem lendo um livro em frente ao notebook">
@@ -80,7 +92,6 @@
                 </p>
             </div>
         </div>
-
 
         <div class="livros-container">
             <div class="livros-img">
@@ -107,7 +118,6 @@
                 </p>
             </div>
         </div>
-
     </section>
 
     <section id="contato">
@@ -127,8 +137,10 @@
     </section>
 
     <footer>
-        <p>&copy; 2019 Original Books</p>
+        <p>&copy; 2020 Original Books</p>
     </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
-
 </html>

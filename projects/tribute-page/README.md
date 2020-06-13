@@ -1,10 +1,16 @@
 <h1 align="center">
-<br>
-Responsive Web Design Projects - Build a Tribute Page
-<br>
-<br>
-  <img src="../../.github/tribute-screenshot.png" alt="screenshot" >
+Tribute Page
 </h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW:-0a0a22?style=flat-square">
+  <br>
+  <a href="https://fcc-tp.netlify.app/">https://fcc-tp.netlify.app/</a>
+</p>
+
+<p>
+  <img src="../../.github/tribute-screenshot.png" alt="screenshot" >
+</p>
 
 ## :dart: Objective
 Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/zNqgVx.

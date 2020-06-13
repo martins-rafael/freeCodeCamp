@@ -5,7 +5,7 @@ Tribute Page
 <p align="center">
   <img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW:-0a0a22?style=flat-square">
   <br>
-  <a href="https://fcc-tp.netlify.app/">https://fcc-tp.netlify.app/</a>
+  <a href="https://fcc-tp.netlify.app/" target="_blank">https://fcc-tp.netlify.app/</a>
 </p>
 
 <p>

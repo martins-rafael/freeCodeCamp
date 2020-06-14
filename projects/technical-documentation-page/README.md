@@ -1,10 +1,16 @@
 <h1 align="center">
-<br>
-Responsive Web Design Projects - Build a Technical Documentation Page
-<br>
-<br>
-  <img src="../../.github/documentation-screenshot.png" alt="screenshot" >
+Technical Documentation Page
 </h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW:-0a0a22?style=flat-square">
+  <br>
+  <a href="https://fcc-documentation.netlify.app/" target="_blank">https://fcc-documentation.netlify.app/</a>
+</p>
+
+<p>
+  <img src="../../.github/documentation-screenshot.png" alt="screenshot" >
+</p>
 
 ## :dart: Objective
 Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/NdrKKL.
